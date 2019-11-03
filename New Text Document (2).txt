@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() 
+{
+    int arr[50],i,lar,n,key=0,loc=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+    scanf("%d",&arr[i]);
+    
+    }
+    scanf("%d",&key);
+    scanf("%d",&loc);
+    for(int i=n-1;i>=loc;i--)
+    {
+        arr[i+1]=arr[i];
+    }
+    arr[loc]=key;
+    for(int i=1;i<=n;i++)
+    {
+printf("\n%d",arr[i]);
+}
+}
